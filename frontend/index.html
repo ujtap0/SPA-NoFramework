@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page App</title>
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+  <nav class="nav">
+    <!-- data-: 데이터 속성/ 특정 데이터를 DOM에 저장  -->
+    <!-- 브라우저는 데이터 속성에 관여하지 않고 개발자가 특정한 요소에 특정 데이터를 저장하고 싶은 경우 자유롭게 쓸 수 있다 -->
+    <!-- data-link: for using the history api, the push states method to navigate to that particular resource to aviod page refresh-->
+    <a href="/" class="nav__link" data-link>Dashboard</a>
+    <a href="/posts" class="nav__link" data-link>Posts</a>
+    <a href="/setting" class="nav__link" data-link>Settings</a>
+  </nav>
+  <div id="app"></div>
+  <script type="module" src="./static/js/index.js"></script>
+  <!-- 각각의 모듈은 js class를 가진다: SPA 렌더링-->
+</body>
+</html>
